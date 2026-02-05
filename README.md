@@ -55,4 +55,4 @@ This project focuses on clarity, clean structure, and core concepts rather than 
 
 1. Clone the repository
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/Colt23-sha/Skillsync.git
