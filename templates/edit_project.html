@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Project</title>
+</head>
+<body>
+    {%extends 'base.html' %}
+    {% block content %}
+    <h1>Edit Project</h1>
+
+    <form method ='POST'>
+        <label>Title</label><br>
+        <input type="text" name="title" value="{{project.title}}" required><br><br>
+        <label>Description</label><br>
+        <textarea name="description" required>{{project.description}}</textarea><br><br>
+        <label>Tech Used</label><br>
+        <input type="text" name="tech" value="{{project.tech}}" required><br><br>
+        <button type="submit">Update Project</button>
+    </form>
+    <a href="{{url_for('project_page')}}">Back</a>
+    {% endblock %}
+</body>
+</html>

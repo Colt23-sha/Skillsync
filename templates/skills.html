@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "base.html" %}
+
+    {%block content%}
+    <h1>Technical Skills</h1>
+    <h3>Programming</h3>
+    <ul>
+        <li>Python</li>
+        <li>C</li>
+    </ul>
+
+    <h3>Web Technologies</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+
+    <h3>Backend & Frameworks</h3>
+    <ul>
+        <li>Flask</li>
+        <li>Jinja Templates</li>
+    </ul>
+
+    <h3>Cloud & AWS</h3>
+    <ul>
+        <li>EC2</li>
+        <li>S3</li>
+        <li>RDS</li>
+        <li>Elastic Beanstalk</li>
+        <li>Route 53</li>
+        <li>CodePipeline</li>
+    </ul>
+
+    <h3>Core Concepts</h3>
+    <ul>
+        <li>Data Structures & Algorithms</li>
+        <li>Problem Solving</li>
+        <li>Cloud Architecture Basics</li>
+    </ul>
+
+    <a href="{{url_for('home')}}">Back to Home</a>
+    {%endblock%}
+</body>
+</html>

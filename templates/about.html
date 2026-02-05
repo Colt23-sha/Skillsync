@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    {% extends "base.html" %}
+    
+    {% block content %}
+    <h1>About this Project</h1>
+    <p>This is a Flask-based personal portfolio web application created as a part of my learning journey in backend and web development.</p>
+    <p>The Project uses Python with Flask for routing, Jinja templates for layout inheritance, and HTML/CSS for frontend structure and styling.</p>
+    <p>My Goal with this project is to strengthen my backend fundamentals and prepare for interships in software and cloud-related roles.</p>
+    <a href="{{ url_for('home') }}">Back to Home Page</a>
+    {% endblock %}
+</body>
+</html>

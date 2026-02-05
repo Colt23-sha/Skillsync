@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Flask App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    {% extends "base.html" %}
+    
+    {% block content %}
+    <h1>Hi, Im Shashank Dev Singh</h1>
+    <p>BCA With AI & Data Science Student , aspiring Cloud & Software Engineer, I build web applications using Flask and Python, and I'm actively learning how real-world backend systems work.</p>
+    <p>This Portfolio is built using Flask to demonstrate my understanding of backend development, template rendering , and cleaning project structure.</p>
+    <a href="{{ url_for('about') }}">About Page</a>
+    {% endblock %}
+</body>
+</html>
